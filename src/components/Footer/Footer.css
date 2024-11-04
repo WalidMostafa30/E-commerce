@@ -1,0 +1,41 @@
+.Footer {
+  background-color: var(--main-bg-color);
+  box-shadow: 0px -2px 6px 0px #0000002e;
+
+  .Footer__Title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+
+    @media (max-width: 992px) {
+      font-size: 50px;
+    }
+
+    span {
+      color: var(--main-color);
+    }
+  }
+
+  .Footer__links {
+    a {
+      font-size: 40px;
+
+      &:hover {
+        path {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+
+  .Footer__pages {
+    a {
+      cursor: pointer;
+      font-size: 22px;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: var(--main-text-color);
+}
+
+:root {
+  --main-color: #429dd5;
+  --main-bg-color: white;
+  --main-text-color: black;
+  --nav-height: 60px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d6d95;
+}
+
+section {
+  padding-block: 20px;
+  min-height: calc(100dvh - var(--nav-height));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+i {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.textMC {
+  color: var(--main-color);
+}
+
+.bgMC {
+  background-color: var(--main-color);
+}
+
+.mainBtn {
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+
+  path {
+    color: white;
+  }
+
+  &:hover {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+
+    path {
+      color: var(--main-color);
+    }
+  }
+}
+
+.mainBtnLight {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  border: 2px solid white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+
+  path {
+    color: var(--main-color);
+  }
+
+  &:hover {
+    background-color: var(--main-color);
+    color: white;
+
+    path {
+      color: white;
+    }
+  }
+}

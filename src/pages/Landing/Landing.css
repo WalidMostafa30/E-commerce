@@ -1,0 +1,13 @@
+.Landing {
+  height: calc(100dvh - var(--nav-height));
+
+  .Landing__title {
+    font-size: 100px;
+    font-weight: bold;
+    filter: drop-shadow(-1px 4px 2px black);
+
+    @media (max-width: 991px) {
+      font-size: 70px;
+    }
+  }
+}

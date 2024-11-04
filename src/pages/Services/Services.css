@@ -1,0 +1,19 @@
+.Services {
+  .Services__card {
+    border: 2px solid var(--main-color);
+
+    &:hover {
+      background-color: var(--main-color);
+
+      h1,
+      p,
+      path {
+        color: white;
+      }
+    }
+  }
+
+  .Services__card-icon {
+    font-size: 100px;
+  }
+}

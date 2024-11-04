@@ -1,0 +1,16 @@
+.CartProduct {
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--main-color);
+  }
+}
+
+.CartProduct__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.CartProduct__quantity {
+  border: 2px solid var(--main-color);
+}
