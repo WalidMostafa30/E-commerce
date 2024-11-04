@@ -22,7 +22,7 @@ export const actGetFavourites = createAsyncThunk(
     const { auth } = getState();
 
     try {
-      const res = await axios.get(`/json/db.json`);
+      const res = await axios.get(`/db.json`);
 
       return { userId: auth.user.id, data: res.data.products };
     } catch (error) {

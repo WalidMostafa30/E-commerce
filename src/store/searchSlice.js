@@ -15,7 +15,7 @@ export const getSearchProducts = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
 
     try {
-      const res = await axios.get(`/json/db.json`);
+      const res = await axios.get(`/db.json`);
       return res.data.products;
     } catch (error) {
       return rejectWithValue(error.message);

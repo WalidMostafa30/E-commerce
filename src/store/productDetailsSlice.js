@@ -7,7 +7,7 @@ export const getProductDetails = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
 
     try {
-      const res = await axios.get(`/json/db.json`);
+      const res = await axios.get(`/db.json`);
       
       const findProduct = res.data.products.find(
         (product) => product.id == id

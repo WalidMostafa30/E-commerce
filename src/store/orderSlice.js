@@ -14,9 +14,9 @@ export const addOrder = createAsyncThunk(
 
       const ids = userCart.map((item) => item.productId);
 
-      const products = (await axios.get(`/json/db.json`)).data.products;
+      const res = await axios.get(`/db.json`);
 
-      const fullProducts = products
+      const fullProducts = res.data.products
         .filter((item) => ids.includes(item.id))
         .map((item) => {
           const quantityObj = userCart.find((el) => el.productId === item.id);
